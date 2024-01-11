@@ -27,7 +27,7 @@ public class StringEndsWith {
         StringEndsWith stringEndsWith = new StringEndsWith();
 
         String str = "sumo";
-        String ending = "omo";
+        String ending = "umo";
 
         boolean endsWith = stringEndsWith.solution(str, ending);
 
