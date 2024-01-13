@@ -22,12 +22,4 @@ public class DisemvowelTrolls {
         }
         return result.toString();
     }
-
-    public static void main(String[] args) {
-        String str = "This is getting interesting.";
-
-        DisemvowelTrolls disemvowelTrolls = new DisemvowelTrolls();
-
-        System.out.println(disemvowelTrolls.disemvowel(str));
-    }
 }

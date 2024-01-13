@@ -1,7 +1,7 @@
 package solutions;
 
 public class FakeBinary {
-    public static String fakeBin(String numberString) {
+    public String fakeBin(String numberString) {
         char[] charArr = numberString.toCharArray();
         for (int i = 0; i < charArr.length; i++) {
             if (Character.getNumericValue(charArr[i]) < 5) {
