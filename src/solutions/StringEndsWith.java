@@ -1,8 +1,7 @@
 package solutions;
 
 public class StringEndsWith {
-        public boolean solution(String str, String ending) {
-
+        public boolean firstSolution(String str, String ending) {
             boolean isEnding = false;
             if (ending.length() > str.length()) {
                 return isEnding;
@@ -22,15 +21,13 @@ public class StringEndsWith {
             }
             return isEnding;
         }
-
-    public static void main(String[] args) {
-        StringEndsWith stringEndsWith = new StringEndsWith();
-
-        String str = "sumo";
-        String ending = "umo";
-
-        boolean endsWith = stringEndsWith.solution(str, ending);
-
-        System.out.println(endsWith);
-    }
+        public boolean secondSolution(String str, String ending){
+            if (str.isEmpty()) {
+                return false;
+            }
+            if (ending.length() > str.length()) {
+                return false;
+            }
+            return str.endsWith(ending);
+        }
 }

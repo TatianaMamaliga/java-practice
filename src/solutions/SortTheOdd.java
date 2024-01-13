@@ -26,14 +26,4 @@ public class SortTheOdd {
         }
         return arr;
     }
-
-    public static void main(String[] args) {
-        SortTheOdd sortTheOdd = new SortTheOdd();
-
-        int[] array = {12, 3, 1, 8, 9};
-
-        int[] sortedArr = sortTheOdd.sortArray(array);
-
-        System.out.println(Arrays.toString(sortedArr));
-    }
 }

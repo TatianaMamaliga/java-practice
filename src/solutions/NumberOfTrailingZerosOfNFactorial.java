@@ -9,10 +9,4 @@ public class NumberOfTrailingZerosOfNFactorial {
         }
         return count;
     }
-
-    public static void main(String[] args) {
-        NumberOfTrailingZerosOfNFactorial zerosOfNFactorial = new NumberOfTrailingZerosOfNFactorial();
-
-        System.out.println(zerosOfNFactorial.zeros(10));
-    }
 }
