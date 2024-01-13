@@ -21,7 +21,6 @@ public class StringEndsWith {
             }
             return isEnding;
         }
-
         public boolean secondSolution(String str, String ending){
             if (str.isEmpty()) {
                 return false;
