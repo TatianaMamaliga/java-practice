@@ -5,8 +5,8 @@ public class TakeATenMinutesWalk {
         int directionNS = 0;
         int directionWE = 0;
 
-        for (int i = 0; i < walk.length; i++) {
-            switch (walk[i]) {
+        for (char c : walk) {
+            switch (c) {
                 case 'n':
                     directionNS++;
                     break;
