@@ -26,6 +26,10 @@ public class MyRunnable {
         c.right = f;
 
         DepthFirstSearch dfSearch = new DepthFirstSearch();
+        BreadthFirstValues breadthFirstValues = new BreadthFirstValues();
+        TreeIncludesBFS treeIncludesBFS = new TreeIncludesBFS();
+        TreeIncludesDFS treeIncludesDFS = new TreeIncludesDFS();
+
         List<Integer> dfSearchValues = dfSearch.getValues(null);
         System.out.println(dfSearchValues);
 
@@ -35,11 +39,16 @@ public class MyRunnable {
         Integer maxVal1 = dfSearch.getMaxValue(root);
         System.out.println("Max value is: " + maxVal1);
 
-        BreadthFirstValues breadthFirstValues = new BreadthFirstValues();
         List<Integer> breadthFirstVal = breadthFirstValues.getValues(root);
         System.out.println("Binary tree displayed using BFS: " + breadthFirstVal);
 
         int maxVal2 = breadthFirstValues.getMaxValue(breadthFirstVal);
         System.out.println("Max value is: " + maxVal2);
+
+        boolean isValIncludedBFS = treeIncludesBFS.isValueIncluded(root, 5);
+        System.out.println(isValIncludedBFS);
+
+        boolean isValIncludedDFS = treeIncludesDFS.isValueIncluded(root, 5);
+        System.out.println(isValIncludedDFS);
     }
 }
