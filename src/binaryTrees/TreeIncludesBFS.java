@@ -3,7 +3,7 @@ package binaryTrees;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class TreeIncludes {
+public class TreeIncludesBFS {
     public boolean isValueIncluded(Node root, Integer value) {
 
         Deque<Node> deque = new ArrayDeque<>();

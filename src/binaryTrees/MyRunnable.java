@@ -27,7 +27,8 @@ public class MyRunnable {
 
         DepthFirstSearch dfSearch = new DepthFirstSearch();
         BreadthFirstValues breadthFirstValues = new BreadthFirstValues();
-        TreeIncludes treeIncludes = new TreeIncludes();
+        TreeIncludesBFS treeIncludesBFS = new TreeIncludesBFS();
+        TreeIncludesDFS treeIncludesDFS = new TreeIncludesDFS();
 
         List<Integer> dfSearchValues = dfSearch.getValues(null);
         System.out.println(dfSearchValues);
@@ -44,7 +45,10 @@ public class MyRunnable {
         int maxVal2 = breadthFirstValues.getMaxValue(breadthFirstVal);
         System.out.println("Max value is: " + maxVal2);
 
-        boolean isValIncluded = treeIncludes.isValueIncluded(root, 5);
-        System.out.println(isValIncluded);
+        boolean isValIncludedBFS = treeIncludesBFS.isValueIncluded(root, 5);
+        System.out.println(isValIncludedBFS);
+
+        boolean isValIncludedDFS = treeIncludesDFS.isValueIncluded(root, 5);
+        System.out.println(isValIncludedDFS);
     }
 }
