@@ -29,6 +29,7 @@ public class MyRunnable {
         BreadthFirstValues breadthFirstValues = new BreadthFirstValues();
         TreeIncludesBFS treeIncludesBFS = new TreeIncludesBFS();
         TreeIncludesDFS treeIncludesDFS = new TreeIncludesDFS();
+        TreeSum treeSum = new TreeSum();
 
         List<Integer> dfSearchValues = dfSearch.getValues(null);
         System.out.println(dfSearchValues);
@@ -50,5 +51,8 @@ public class MyRunnable {
 
         boolean isValIncludedDFS = treeIncludesDFS.isValueIncluded(root, 5);
         System.out.println(isValIncludedDFS);
+
+        int sum = treeSum.getSum(root);
+        System.out.println(sum);
     }
 }
