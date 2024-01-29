@@ -14,9 +14,9 @@ public class MyRunnable {
         Node f = new Node();
 
         b.value = 2;
-        c.value = -6;
+        c.value = 3;
         d.value = 4;
-        e.value = 0;
+        e.value = 5;
         f.value = 6;
 
         root.left = b;
@@ -31,6 +31,7 @@ public class MyRunnable {
         TreeIncludesDFS treeIncludesDFS = new TreeIncludesDFS();
         TreeSum treeSum = new TreeSum();
         TreeMinValue treeMinValue = new TreeMinValue();
+        MaxSumPath sumPath = new MaxSumPath();
 
         List<Integer> dfSearchValues = dfSearch.getValues(null);
         System.out.println(dfSearchValues);
@@ -58,5 +59,8 @@ public class MyRunnable {
 
         int minValue = treeMinValue.getMinValue(root);
         System.out.println(minValue);
+
+        int maxSumPath = sumPath.getMaxSumPath(root);
+        System.out.println(maxSumPath);
     }
 }
