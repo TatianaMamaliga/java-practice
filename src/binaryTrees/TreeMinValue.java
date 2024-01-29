@@ -5,7 +5,7 @@ import java.util.Stack;
 public class TreeMinValue {
 
     public int getMinValue(Node root) {
-        int minValue = (int) Double.POSITIVE_INFINITY;
+        int minValue = Integer.MAX_VALUE;
         Stack<Node> stack = new Stack<>();
         stack.push(root);
 
