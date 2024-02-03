@@ -1,7 +1,5 @@
 package solutions;
 
-import java.util.Arrays;
-
 public class DiceGameGreedIsGood {
     /*
  Three 1's => 1000 points
